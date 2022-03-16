@@ -46,26 +46,25 @@ const Create = () => {
       <Header />
     { loading && <GoLoading/> }
       <div className="centerDiv">
-        <label>Name</label>
-        <br />
+  
         <input
           className="input"
           type="text"
           name="Name"
+          placeholder="Name"
           value={name}
           onChange={(e) => {
             setName(e.target.value);
           }}
         />
-        <br />
-        <label>Category:</label>
         <select
           name="Category"
           onChange={(e) => {
             setCategory(e.target.value);
           }}
           className="input"
-        > <option >Select Category</option>
+          placeholder="TYPE of ITEM"
+        > <option >Type of item</option>
           <option value="Cars">Cars</option>
           <option value="Cameras & Lenses">Cameras & Lenses</option>
           <option value="Computers & Laptops">Computers & Laptops</option>
@@ -73,35 +72,30 @@ const Create = () => {
           <option value="Motorcycles">Motorcycles</option>
           <option value="Tablets">Tablets</option>
         </select>
-        <br />
-        <label>Price</label>
-        <br />
         <input
           className="input"
           type="number"
           name="Price"
+          placeholder="Price"
           value={price}
           onChange={(e) => {
             setPrice(e.target.value);
           }}
         />
-        <br />
-        <label>Description</label>
-        <br />
         <input
           className="input"
           type="text"
           name="Description"
           value={description}
+          placeholder="Description"
           onChange={(e) => {
             setDescription(e.target.value);
           }}
         />
         <br />
 
-        <br />
         <img
-          alt="Posts"
+          alt=" "
           width="200px"
           height="200px"
           src={image ? URL.createObjectURL(image) : ""}
@@ -116,7 +110,7 @@ const Create = () => {
         />
         <br />
         <button className="uploadBtn" onClick={handleSubmit}>
-          upload and Submit
+          POST
         </button>
       </div> 
     </Fragment>
