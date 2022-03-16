@@ -11,12 +11,11 @@ function Banner() {
 
 <nav>
 <ul class="menuItems">
-            <li onClick={()=>setCategory("Cars")} >Cars</li>
-            <li onClick={()=>setCategory("Cameras & Lenses")} >Cameras & Lenses</li>
-            <li onClick={()=>setCategory("Computers & Laptops")} >Computers & Laptops</li>
-            <li onClick={()=>setCategory("Mobile Phones")} >Mobile Phones</li>
-            <li onClick={()=>setCategory("Motorcycles")} >Motorcycles</li>
-            <li onClick={()=>setCategory("Tablets")} >Tablets</li>
+            <li onClick={()=>setCategory("Mobiles and laptops")} >Mobiles and laptops</li>
+            <li onClick={()=>setCategory("Cycles")} >Cycles</li>
+            <li onClick={()=>setCategory("Books")} >Books</li>
+            <li onClick={()=>setCategory("Shoes")} >Shoes</li>
+            <li onClick={()=>setCategory("Jobs")} >Jobs</li>
 </ul>
 { category!=null && <DynamicPosts category={category}/>  }
 </nav>

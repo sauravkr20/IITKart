@@ -2,10 +2,15 @@ import React from "react";
 import './signuploading.css'
 const SignUpLoading = () => {
   return (
-    <div className="signup-loading">
-      {/* <h1 className="title">Loading...</h1> */}
-      <div className="rainbow-marker-loader"></div>
-    </div>
+    <div id="load">
+  <div>G</div>
+  <div>N</div>
+  <div>I</div>
+  <div>D</div>
+  <div>A</div>
+  <div>O</div>
+  <div>L</div>
+</div>
   );
 };
 

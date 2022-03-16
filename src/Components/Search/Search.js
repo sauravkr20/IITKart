@@ -53,13 +53,7 @@ function Search() {
           value={wordEntered}
           onChange={handleFilter}
         />
-        <div className="searchIcon">
-          
-           <div onClick={handleSearchClick}> <SearchIcon /> </div>
-           {filteredData.length !== 0 && (
-            <div id="clearBtn"  onClick={clearInput} ><CloseIcon/></div>
-          )}
-        </div>
+        
       </div>
       {filteredData.length !== 0 && (
         <div className="dataResult">

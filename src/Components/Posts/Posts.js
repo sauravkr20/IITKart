@@ -76,7 +76,7 @@ function Posts() {
       )}
      <div className="recommendations">
         <div className="heading">
-          <span>Fresh recommendations</span>
+          <span>Faviourates</span>
         </div>
         <div className="fresh-recomendation-cards cards">{loading2 ? <BarLoading/> : freshRecomendationCards}</div> 
       </div> 
